@@ -1,8 +1,8 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
-  '@base-api-dev-version/api': https://lf3-static.bytednsdoc.com/obj/eden-cn/nupybaeh7pxbenuhm/lark-base-open-js-sdk-1.2.9.tgz
   '@douyinfe/semi-ui': ^2.35.0
+  '@lark-base-open/js-sdk': https://lf3-static.bytednsdoc.com/obj/eden-cn/nupybaeh7pxbenuhm/lark-base-open-js-sdk-1.2.9.tgz
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.0
@@ -14,10 +14,10 @@ specifiers:
   vite: ^3.0.4
 
 dependencies:
-  '@base-api-dev-version/api': '@lf3-static.bytednsdoc.com/obj/eden-cn/nupybaeh7pxbenuhm/lark-base-open-js-sdk-1.2.9.tgz'
-  '@douyinfe/semi-ui': 2.42.2_biqbaboplfbrettd7655fr4n2y
+  '@douyinfe/semi-ui': 2.42.2_react-dom@18.2.0+react@18.2.0
+  '@lark-base-open/js-sdk': '@lf3-static.bytednsdoc.com/obj/eden-cn/nupybaeh7pxbenuhm/lark-base-open-js-sdk-1.2.9.tgz'
   i18next: 23.4.6
-  react-i18next: 13.2.0_tdfn4wwtvfybtukrsv2e5gl7pa
+  react-i18next: 13.2.0_98cade5ad3a97019d15195744e997f78
 
 devDependencies:
   '@types/react': 18.2.21
@@ -311,7 +311,7 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@dnd-kit/core/6.0.8_biqbaboplfbrettd7655fr4n2y:
+  /@dnd-kit/core/6.0.8_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-lYaoP8yHTQSLlZe6Rr9qogouGUz9oRUj4AHhDQGQzq/hqaJRpFo65X+JKsdHf8oUFBzx5A+SJPUvxAwTF2OabA==}
     peerDependencies:
       react: '>=16.8.0'
@@ -324,13 +324,13 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@dnd-kit/sortable/7.0.2_52scne4zmdeyjh2otzkgz2xfvu:
+  /@dnd-kit/sortable/7.0.2_@dnd-kit+core@6.0.8+react@18.2.0:
     resolution: {integrity: sha512-wDkBHHf9iCi1veM834Gbk1429bd4lHX4RpAwT0y2cHLf246GAvU2sVw/oxWNpPKQNQRQaeGXhAVgrOl1IT+iyA==}
     peerDependencies:
       '@dnd-kit/core': ^6.0.7
       react: '>=16.8.0'
     dependencies:
-      '@dnd-kit/core': 6.0.8_biqbaboplfbrettd7655fr4n2y
+      '@dnd-kit/core': 6.0.8_react-dom@18.2.0+react@18.2.0
       '@dnd-kit/utilities': 3.2.1_react@18.2.0
       react: 18.2.0
       tslib: 2.6.2
@@ -399,14 +399,14 @@ packages:
       glob: 7.2.3
     dev: false
 
-  /@douyinfe/semi-ui/2.42.2_biqbaboplfbrettd7655fr4n2y:
+  /@douyinfe/semi-ui/2.42.2_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-SycO253gBGvxaD8yMzUZE55xfyGZe1I6jaWN+CoAkaJPSvFuufscyzv7UYKMi9mmrVrt9KMpTxI8fBQ2pQIYOw==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      '@dnd-kit/core': 6.0.8_biqbaboplfbrettd7655fr4n2y
-      '@dnd-kit/sortable': 7.0.2_52scne4zmdeyjh2otzkgz2xfvu
+      '@dnd-kit/core': 6.0.8_react-dom@18.2.0+react@18.2.0
+      '@dnd-kit/sortable': 7.0.2_@dnd-kit+core@6.0.8+react@18.2.0
       '@dnd-kit/utilities': 3.2.1_react@18.2.0
       '@douyinfe/semi-animation': 2.42.2
       '@douyinfe/semi-animation-react': 2.42.2
@@ -423,8 +423,8 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-resizable: 3.0.5_biqbaboplfbrettd7655fr4n2y
-      react-window: 1.8.9_biqbaboplfbrettd7655fr4n2y
+      react-resizable: 3.0.5_react-dom@18.2.0+react@18.2.0
+      react-window: 1.8.9_react-dom@18.2.0+react@18.2.0
       resize-observer-polyfill: 1.5.1
       scroll-into-view-if-needed: 2.2.31
       utility-types: 3.10.0
@@ -1048,8 +1048,9 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: true
 
-  /react-draggable/4.4.5_biqbaboplfbrettd7655fr4n2y:
+  /react-draggable/4.4.5_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-OMHzJdyJbYTZo4uQE393fHcqqPYsEtkjfMgvCHr6rejT+Ezn4OZbNyGH50vv+SunC1RMvwOTSWkEODQLzw1M9g==}
     peerDependencies:
       react: '>= 16.3.0'
@@ -1061,7 +1062,7 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /react-i18next/13.2.0_tdfn4wwtvfybtukrsv2e5gl7pa:
+  /react-i18next/13.2.0_98cade5ad3a97019d15195744e997f78:
     resolution: {integrity: sha512-YD8xMc+I0jkHHLotd8ERMzZ53hMaCBVLCndbcbBveJn3FbppRP4jyYOAkmR8XItN01sTD9ilAjoEjpH1i42IgA==}
     peerDependencies:
       i18next: '>= 23.2.3'
@@ -1090,19 +1091,19 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-resizable/3.0.5_biqbaboplfbrettd7655fr4n2y:
+  /react-resizable/3.0.5_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-vKpeHhI5OZvYn82kXOs1bC8aOXktGU5AmKAgaZS4F5JPburCtbmDPqE7Pzp+1kN4+Wb81LlF33VpGwWwtXem+w==}
     peerDependencies:
       react: '>= 16.3'
     dependencies:
       prop-types: 15.8.1
       react: 18.2.0
-      react-draggable: 4.4.5_biqbaboplfbrettd7655fr4n2y
+      react-draggable: 4.4.5_react-dom@18.2.0+react@18.2.0
     transitivePeerDependencies:
       - react-dom
     dev: false
 
-  /react-window/1.8.9_biqbaboplfbrettd7655fr4n2y:
+  /react-window/1.8.9_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-+Eqx/fj1Aa5WnhRfj9dJg4VYATGwIUP2ItwItiJ6zboKWA6EX3lYDAXfGF2hyNqplEprhbtjbipiADEcwQ823Q==}
     engines: {node: '>8.0.0'}
     peerDependencies:
@@ -1120,6 +1121,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: true
 
   /regenerator-runtime/0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
@@ -1150,6 +1152,7 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
+    dev: true
 
   /scroll-into-view-if-needed/2.2.31:
     resolution: {integrity: sha512-dGCXy99wZQivjmjIqihaBQNjryrz5rueJY7eHfTdyWEiR4ttYpsajb14rn9s5d4DY4EcY6+4+U/maARBXJedkA==}

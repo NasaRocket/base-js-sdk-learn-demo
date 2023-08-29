@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@base-api-dev-version/api":"https://lf3-static.bytednsdoc.com/obj/eden-cn/nupybaeh7pxbenuhm/lark-base-open-js-sdk-1.2.9.tgz",
+    "@lark-base-open/js-sdk":"https://lf3-static.bytednsdoc.com/obj/eden-cn/nupybaeh7pxbenuhm/lark-base-open-js-sdk-1.2.9.tgz",
     "@douyinfe/semi-ui": "^2.35.0",
     "i18next": "^23.2.3",
     "react-i18next": "^13.0.1"

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import { Banner } from '@douyinfe/semi-ui';
-import { bitable } from '@base-api-dev-version/api';
+import { bitable } from '@lark-base-open/js-sdk';
 import { Type } from '@douyinfe/semi-ui/lib/es/banner';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
