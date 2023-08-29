@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import { Banner, Toast } from '@douyinfe/semi-ui';
+import { Banner } from '@douyinfe/semi-ui';
 import { bitable } from '@base-api-dev-version/api';
 import { Type } from '@douyinfe/semi-ui/lib/es/banner';
 
