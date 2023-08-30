@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import { Banner } from '@douyinfe/semi-ui';
 import { bitable } from '@lark-base-open/js-sdk';
-import { Type } from '@douyinfe/semi-ui/lib/es/banner';
+import { Alert, AlertProps } from 'antd';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -12,22 +11,18 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 
 function LoadApp() {
   const [info, setInfo] = useState('get table name, please waiting ....');
-  const [infoType, setInfoType] = useState('info');
+  const [alertType, setAlertType] = useState<AlertProps['type']>('info');
   useEffect(() => {
     const fn = async () => {
       const table = await bitable.base.getActiveTable();
       const tableName = await table.getName();
       setInfo(`The table Name is ${tableName}`);
-      setInfoType('success');
+      setAlertType('success');
     };
     fn();
   }, []);
 
   return <div>
-    <Banner
-      type={infoType as Type}
-      closeIcon={null}
-      description={info}
-    />
+    <Alert message={info} type={alertType} />
   </div>
 }
