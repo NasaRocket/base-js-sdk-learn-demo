@@ -15,6 +15,7 @@
   "dependencies": {
     "@lark-base-open/js-sdk": "https://lf3-static.bytednsdoc.com/obj/eden-cn/nupybaeh7pxbenuhm/add-api.tgz",
     "antd": "^5.8.5",
+    "axios": "^1.5.0",
     "i18next": "^23.2.3",
     "react-i18next": "^13.0.1"
   },
